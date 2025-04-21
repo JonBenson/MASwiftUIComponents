@@ -8,14 +8,14 @@
 import SwiftUI
 
 @available(iOS 15.0.0, *)
-struct FilledCapsualButton: View {
+public struct FilledCapsualButton: View {
     
     var action: () -> Void
     var text: Text
     var colour: Color
     
     
-    var body: some View {
+    public var body: some View {
         Button(action: action, label: {
             text
         })
@@ -28,13 +28,13 @@ struct FilledCapsualButton: View {
 }
 
 @available(iOS 15.0.0, *)
-struct OutlineCapsualButton: View {
+public struct OutlineCapsualButton: View {
     
     var action: () -> Void
     var text: Text
     
     
-    var body: some View {
+    public var body: some View {
         Button(action: action, label: {
             text
         })
@@ -51,7 +51,7 @@ struct OutlineCapsualButton: View {
 }
 
 @available(iOS 15.0.0, *)
-struct GradientCapsualButton: View {
+public struct GradientCapsualButton: View {
     
     var action: () -> Void
     var text: Text
@@ -59,7 +59,7 @@ struct GradientCapsualButton: View {
    
     
     
-    var body: some View {
+    public var body: some View {
         Button(action: action, label: {
             text
         })

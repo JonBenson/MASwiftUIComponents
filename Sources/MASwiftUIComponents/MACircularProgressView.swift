@@ -8,13 +8,13 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct CircularProgressView: View {
+public struct CircularProgressView: View {
     var progress: CGFloat
     var lineWidth: CGFloat
     var trackColor: Color
     var progressColor: Color
     
-    var body: some View {
+    public var body: some View {
         ZStack {
             Circle()
                 .trim(from: 0, to: 1)
