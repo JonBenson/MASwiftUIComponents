@@ -14,6 +14,13 @@ public struct CircularProgressView: View {
     var trackColor: Color
     var progressColor: Color
     
+    public init(progress: CGFloat, lineWidth: CGFloat, trackColor: Color, progressColor: Color) {
+        self.progress = progress
+        self.lineWidth = lineWidth
+        self.trackColor = trackColor
+        self.progressColor = progressColor
+    }
+    
     public var body: some View {
         ZStack {
             Circle()

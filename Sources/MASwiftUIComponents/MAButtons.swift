@@ -14,6 +14,11 @@ public struct FilledCapsualButton: View {
     var text: Text
     var colour: Color
     
+    public init(action: @escaping () -> Void, text: Text, colour: Color) {
+        self.action = action
+        self.text = text
+        self.colour = colour
+    }
     
     public var body: some View {
         Button(action: action, label: {
@@ -33,6 +38,10 @@ public struct OutlineCapsualButton: View {
     var action: () -> Void
     var text: Text
     
+    public init(action: @escaping () -> Void, text: Text) {
+        self.action = action
+        self.text = text
+    }
     
     public var body: some View {
         Button(action: action, label: {
@@ -57,7 +66,11 @@ public struct GradientCapsualButton: View {
     var text: Text
     var colours: [Color]
    
-    
+    public init(action: @escaping () -> Void, text: Text, colours: [Color]) {
+        self.action = action
+        self.text = text
+        self.colours = colours
+    }
     
     public var body: some View {
         Button(action: action, label: {
